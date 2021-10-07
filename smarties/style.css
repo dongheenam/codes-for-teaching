@@ -1,0 +1,35 @@
+.smarties {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    color: #eee;
+  }
+  
+  .smarties-green {
+    background-color: rgb(62,181,55);     
+  }
+  .smarties-orange {
+    background-color: rgb(250,76,15);
+  }
+  .smarties-blue {
+    background-color: rgb(2,155,213);    
+  }
+  .smarties-pink {
+    background-color: rgb(236,0,133);
+  }
+  .smarties-yellow {
+    background-color: rgb(255,205,0);    
+  }
+  .smarties-red {
+    background-color: rgb(233,0,24);    
+  }
+  .smarties-purple {
+    background-color: rgb(141,61,150);    
+  }
+  .smarties-brown {
+    background-color: rgb(128,26,11);    
+  }
