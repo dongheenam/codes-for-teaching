@@ -1,7 +1,7 @@
 function gaussian(mu, sigma) {
   // draws a sample from N(mu, sigma^2)
   let u = Math.random(), v = Math.random();
-  let x = Math.sqrt( -2.0 * Math.log( u ) ) * Math.cos( 2.0 * Math.PI * v ) * sigma/2 + mu ;
+  let x = Math.sqrt( -2.0 * Math.log( u ) ) * Math.cos( 2.0 * Math.PI * v ) * sigma + mu ;
   return Math.round(x);
 }
   
@@ -23,7 +23,7 @@ function makeSmarties() {
   // creates a random number of random Smarties inside #container-smarties
   const d = document.getElementById("container-smarties");
   d.innerHTML = "";
-  let no = gaussian(12.5, 2);
+  let no = gaussian(12.5, 1);
   for (let i=0; i<no; i++) {
     d.innerHTML += makeSmarty(randInt(0,7));
   }
