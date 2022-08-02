@@ -6,7 +6,7 @@ import re
 import camelot
 import pandas as pd
 
-PATH_DOWNLOADS = "../../../Downloads/"
+PATH_DOWNLOADS = "../../../Downloads/bulletins/"
 ROW_NAME = 5
 ROW_PERIOD = 0
 
@@ -94,12 +94,3 @@ if __name__ == "__main__" :
     df = pd.DataFrame(list_tally, columns=["Name", "Covers"])
     df.to_csv(os.path.join(PATH_DOWNLOADS, "covers.csv"))
     print("file saved, all completed!")
-
-
-
-    
-
-
-
-
-
