@@ -1,3 +1,4 @@
+""" throws a (d)-sided die n times and return the results """
 import argparse
 
 import numpy as np

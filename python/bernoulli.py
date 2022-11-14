@@ -1,12 +1,11 @@
+""" meausres the chance of at least one success from (n_exp) experiments, 
+    with chance of success = 1/(n_exp),
+    by repeating the trial (n_trial) times """
 import argparse
 
 import numpy as np
 
 def trial(n) :
-    """
-    conduct experiment n times with success probability of 1/n
-    and return the result
-    """
     trials = np.random.uniform(size=n)
     successes = trials < (1/n)
     return any(successes)

@@ -1,3 +1,4 @@
+""" calculates the sum of 1/(i!) from i = 0 to n """
 import argparse
 
 import numpy as np
