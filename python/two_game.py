@@ -51,4 +51,9 @@ if __name__ == "__main__" :
 
         prob = count / N
         bar = "*" * int(np.round(count / counts_max * BAR_LENGTH))
-        print(f"{i:>6d}{med_tick}| {prob*100:>7.2f} | {bar}")
+        print(f"{i:>6d}{med_tick}| {prob*100:>8.2f} | {bar}")
+    
+    total_trials = np.sum(np.array(list(hist.keys())) * np.array(list(hist.values())))
+
+    print("=" * terminal_width)
+    print(f"P(2) = {N/total_trials*100:.2f}%")

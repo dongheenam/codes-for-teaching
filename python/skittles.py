@@ -10,7 +10,7 @@ if __name__ == "__main__" :
   args = parser.parse_args()
 
   N = args.n  # number of trials
-  n_colors = 8   # number of different colours
+  n_colors = 6   # number of different colours
   packet_size = 13 # size of a single packet
 
   count = 0
